@@ -1,6 +1,7 @@
 
 var submitBtn = document.querySelector('.submit');
-var cityButton = document.querySelector('.city-buttons');
+var cityOnePoi = document.querySelector('#one');
+var cityTwoPoi = document.querySelector('#two');
 
 
 // this creates a variable and states that this is an array for storying multiple values, strings or objects
@@ -176,52 +177,74 @@ function findCity(event) {
 
 
     // corresponds with the html tourism-criteria radio buttons
-        firstRadio = document.querySelector('#one')
-        firstRadio.textContent = response.results[0].id;
+        firstCityButton = document.querySelector('#one')
+        firstCityButton.textContent = response.results[0].id;
         
 
-        secondRadio = document.querySelector('#two')
-        secondRadio.textContent = response.results[1].id;
+        secondCityButton = document.querySelector('#two')
+        secondCityButton.textContent = response.results[1].id;
         
 
-        thirdRadio = document.querySelector('#three')
-        thirdRadio.textContent = response.results[2].name;
+        thirdCityButton = document.querySelector('#three')
+        thirdCityButton.textContent = response.results[2].name;
         
 
-        forthRadio = document.querySelector('#four')
-        forthRadio.textContent = response.results[3].name;
+        forthCityButton = document.querySelector('#four')
+        forthCityButton.textContent = response.results[3].name;
 
-        fifthRadio = document.querySelector('#five')
-        fifthRadio.textContent = response.results[4].name;
+        fifthCityButton = document.querySelector('#five')
+        fifthCityButton.textContent = response.results[4].name;
         
 
-        sixthRadio = document.querySelector('#six')
-        sixthRadio.textContent = response.results[5].name;
+        sixthCityButton = document.querySelector('#six')
+        sixthCityButton.textContent = response.results[5].name;
         
 
-        seventhRadio = document.querySelector('#seven')
-        seventhRadio.textContent = response.results[6].name;
+        seventhCityButton = document.querySelector('#seven')
+        seventhCityButton.textContent = response.results[6].name;
         
 
-        eighthRadio = document.querySelector('#eight')
-        eighthRadio.textContent = response.results[7].name;
+        eighthCityButton = document.querySelector('#eight')
+        eighthCityButton.textContent = response.results[7].name;
 
-        ninthRadio = document.querySelector('#nine')
-        ninthRadio.textContent = response.results[8].name;
+        ninthCityButton = document.querySelector('#nine')
+        ninthCityButton.textContent = response.results[8].name;
         
 
-        tenthRadio = document.querySelector('#ten')
-        tenthRadio.textContent = response.results[9].name;
-
+        tenthCityButton = document.querySelector('#ten')
+        tenthCityButton.textContent = response.results[9].name;
+        
         
 
-        cityButton.addEventListener('click', function(event){
-            event.preventDefault()
-            alert('I was clicked')
+        cityOnePoi.addEventListener('click', function(){
+            var cityOnePoi = document.querySelector('#city-one-poi-name')
+            var cityOnePoiResponse = response.results[0].name;
+            cityOnePoi.textContent = cityOnePoiResponse;
+    
+            // var cityOneImageTitle = document.querySelector('#city-one-image-title')
+            // var cityOneKnowFor = response.results[0].snippet;
+            // cityOneImageTitle.textContent = cityOneKnowFor;
+    
+            // var cityOneImagePhoto = document.querySelector('.city-one-image')
+            // var cityOneResponsePhoto = response.results[0].images[0].source_url;
+            // cityOneImagePhoto.setAttribute('src', cityOneResponsePhoto);
             
         });
 
-        
+        cityTwoPoi.addEventListener('click', function(){
+            var cityTwoPoi = document.querySelector('#city-one-poi-name')
+            var cityTwoPoiResponse = response.results[1].name;
+            cityTwoPoi.textContent = cityTwoPoiResponse;
+    
+            // var cityOneImageTitle = document.querySelector('#city-one-image-title')
+            // var cityOneKnowFor = response.results[0].snippet;
+            // cityOneImageTitle.textContent = cityOneKnowFor;
+    
+            // var cityOneImagePhoto = document.querySelector('.city-one-image')
+            // var cityOneResponsePhoto = response.results[0].images[0].source_url;
+            // cityOneImagePhoto.setAttribute('src', cityOneResponsePhoto);
+            
+        });
 
     })
 
