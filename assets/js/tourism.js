@@ -1,5 +1,7 @@
 
 var submitBtn = document.querySelector('.submit');
+var cityButton = document.querySelector('.city-buttons');
+
 
 // this creates a variable and states that this is an array for storying multiple values, strings or objects
 var findCountry = []
@@ -210,9 +212,22 @@ function findCity(event) {
 
         tenthRadio = document.querySelector('#ten')
         tenthRadio.textContent = response.results[9].name;
+
+        
+
+        cityButton.addEventListener('click', function(event){
+            event.preventDefault()
+            alert('I was clicked')
+            
+        });
+
+        
+
     })
 
 
+   
+     
     // .catch(err => {
     // 	console.error(err);
     // });
