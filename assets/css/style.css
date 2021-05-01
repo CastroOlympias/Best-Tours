@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+/* Start styles for header */
+.body{ 
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding: 5px;
+    justify-content: center;
+    background: rgb(250, 235, 224);
+}
+
+.title {
+    font-size: 100px;
+    font-style: italic;
+    background: linear-gradient(70deg, black, orange,black,red, black);
+    text-align: center;
+}
+/* end styles for header */
+
+/* start navigation stiles */
+#searchForm {
+    padding: 5px;
+}
+
+.search-header {
+    font-size: 26px;
+    text-align: center;
+}
+
+.searchForm {
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
+    border-radius: 10px;
+}
+
+.search {
+    font-size: 25px;
+    border-radius: 7px;
+    border: grey 1px dotted;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 1.0);
+}
+
+.submit {
+    font-size: 25px;
+    background-color: cyan;
+    border-radius: 7px;
+    margin-top: 10px;
+    border: black 1px none;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 1.0);
+}
+
+.tourism-criteria {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    border-top: 3px solid black;
+    border-radius: 10px;
+    border-bottom: 3px solid black;
+}
+
+.tourism-options-header {
+    font-size: 26px;
+    text-align: center;
+    border-bottom: 2px solid black;
+}
+
+.navigation {
+    border: 2px solid black;
+    margin-right: 10px;
+    border-radius: 7px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 1.0);
+}
+/* End navigation styles */
+
+/* Feature box styles */
+.features {
+    border: 2px black solid;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding: none;
+    border-radius: 7px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 1.0);
+}
+
+.spacing {
+    border: 2px black solid;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-radius: 7px;
+}
+/* End Feature box styles */
+
+.tour-header {
+    text-align: center;
+    Font-size: 50px;
+    color: black;
+    font: bold;
+    text-shadow: 10px 10px 10px rgba(0, 0, 0, 1.0);
+}
