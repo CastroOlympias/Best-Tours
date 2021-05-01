@@ -220,19 +220,19 @@ function findCity(event) {
 
 
     // this fetch will find points of interest (food) locations by city name. Hard code search option values into radio buttons that will populate from the country fetch search
-    fetch('https://www.triposo.com/api/20210317/poi.json?location_id=' + citySearch + '&tag_labels=eatingout&account=6OIHILXY&token=cd6hxbcw7b7ujjuv48p0pjiqo5bb2zp3')
+    // fetch('https://www.triposo.com/api/20210317/poi.json?location_id=' + citySearch + '&tag_labels=eatingout&account=6OIHILXY&token=cd6hxbcw7b7ujjuv48p0pjiqo5bb2zp3')
 
-    .then(function(response) {
-        return response.json();   
-    })
-    .then(function(response) {
-        console.log(response);
+    // .then(function(response) {
+    //     return response.json();   
+    // })
+    // .then(function(response) {
+    //     console.log(response);
 
-    })
+    // })
 
-    .catch(err => {
-        console.error(err);
-    });
+    // .catch(err => {
+    //     console.error(err);
+    // });
 
 };
 
