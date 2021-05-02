@@ -5,111 +5,87 @@
     font-family: Helvetica, Arial, sans-serif;
 }
 
-/* Start styles for header */
-.body{ 
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    padding: 5px;
-    justify-content: center;
-    background: rgb(250, 235, 224);
-}
-
-.title {
-    font-size: 100px;
-    font-style: italic;
-    background: linear-gradient(70deg, black, orange,black,red, black);
-    text-align: center;
-}
-/* end styles for header */
-
-/* start navigation stiles */
-
-.nav {
-    position: sticky;
-    top: 0;
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0;
-}
-#searchForm {
-    padding: 5px;
-}
-
-.search-header {
-    font-size: 26px;
-    text-align: center;
-}
-
-.searchForm {
-    border-top: 3px solid black;
-    border-bottom: 3px solid black;
-    border-radius: 10px;
-}
-
-.search {
+/* Start user interface and selections */
+.selection-header {
     font-size: 25px;
-    border-radius: 7px;
-    border: grey 1px dotted;
+    text-align: center;
+    color: black;
+}
+
+.selection-box {
+    border-radius: 10px;
+    font-size: 25px;
+    border: none;
+    margin-bottom: 17px;
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 1.0);
 }
 
 .submit {
     font-size: 25px;
-    background-color: cyan;
+    background-color: #C7EBF0;
     border-radius: 7px;
     margin-top: 10px;
     border: black 1px none;
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 1.0);
 }
 
-.tourism-criteria {
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: 10px;
-    border-top: 3px solid black;
-    border-radius: 10px;
-    border-bottom: 3px solid black;
-}
-
-.tourism-options-header {
-    font-size: 26px;
-    text-align: center;
-    border-bottom: 2px solid black;
-}
-
-.navigation {
-    border: 2px solid black;
-    margin-right: 10px;
+.city-submit {
+    font-size: 15px;
+    background-color: #f39b68;
     border-radius: 7px;
+    margin-bottom: 17px;
+    border: none;
+    padding: 12px;
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 1.0);
+    color: black;
 }
-/* End navigation styles */
+/* End user interface and selections */
 
-/* Feature box styles */
-.features {
-    border: 2px black solid;
+/* start functional styles */
+.flex-direction-row{
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    padding: none;
-    border-radius: 7px;
+    justify-content: space-evenly;
+}
+/* End functional styles */
+
+.padding-small{
+    padding: 5px;
+}
+
+/* start design styles */
+.background-color-primary{
+    background-color: #F7F7F2;
+}
+
+.header {
+    font-size: 100px;
+    font-style: italic;
+    color: #fff;
+    background: linear-gradient(70deg, #8EE3EF, #AEF3E7, #E89005, #EC7505);
+    text-align: center;
+}
+
+.text-styles-primary{
+    font-size: 26px;
+    text-align: center;
+    color: orange;
+}
+
+.text-styles-secondary{
+    font-size: 20px;
+    text-align: center;
+    color: black;
+}
+
+.shadows-primary{
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 1.0);
 }
 
-.spacing {
-    border: 2px black solid;
-    padding: 10px;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    border-radius: 7px;
+.border-boxes {
+    margin-top: 15px;
+    border-top: 3px black solid;
+    border-radius: 10px;
 }
-/* End Feature box styles */
-
-.tour-header {
-    text-align: center;
-    Font-size: 50px;
-    color: black;
-    font: bold;
-    text-shadow: 10px 10px 10px rgba(0, 0, 0, 1.0);
-}
+/* End design styles */

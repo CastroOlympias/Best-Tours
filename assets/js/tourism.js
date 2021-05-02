@@ -20,7 +20,7 @@ var findCountry = JSON.parse(localStorage.getItem('City')) || [];
 submitBtn.onclick = findCity;
 function findCity(event) {
     event.preventDefault();
-    var countrySearch = document.querySelector('#search').value
+    var countrySearch = document.querySelector('.search').value
     //console.log(countrySearch)
     
     // We are puhsing the user input search value from city Search into the findCountry array

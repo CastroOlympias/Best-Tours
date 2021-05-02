@@ -8,22 +8,21 @@
     <link rel="stylesheet" href="./assets/css/style.css">
   </head>
     <header>
-      <h1 class="title">
-        You had me at, Hello!
+      <h1 class="header">
+        We - Go!
       </h1>
 </header>
 
-
-<main class="body">
+<main class="flex-direction-row padding-small background-color-primary">
 
   <!-- Navigation section and nav header -->
-  <section class="container navigation column is-one-fifth">
-    <h1 class="column is-12 search-header">Enter Country Destination!</h1>
+  <section class="column is-one-fifth">
+    <h1 class="selection-header column is-12 search-header">Chose Thine Country!</h1>
 
     <!-- Search form and submit botton -->
-    <form class="searchForm column is-full">
+    <form class="column is-full">
 
-    <select id="search" class="search column is-full" placeholder="Enter Destination">
+    <select class="search column is-full selection-box" placeholder="Enter Destination">
       <option >Select a Country</option>
       <option value="Brazil">Brazil</option>
       <option value="Egypt">Egypt</option>
@@ -38,33 +37,33 @@
 
     </select>
     <button class="submit column is-full submitBtn">
-      <text>Begin Your Search</text>
+      <text>Search</text>
     </button>
     </form>
 
     <!-- section for criteria options for tourism search features -->
-    <div class="column is-full tourism-criteria">
-      <div class="tourism-options-header column is-full">Select Your Criteria!</div>
-        <div class="column is-12 body">
-          <button id="one" class="column is-half">button</button>
+    <div>
+      <div class="border-boxes selection-header column is-full">Chose Thine City!</div>
+        <div class="flex-direction-row padding-small">
+          <button id="one" class="column is-5 city-submit"></button>
 
-          <button id="two" class="column is-half">button</button>
+          <button id="two" class="column is-5 city-submit"></button>
 
-          <button id="three" class="column is-half">button</button>
+          <button id="three" class="column is-5 city-submit"></button>
 
-          <button id="four" class="column is-half">button</button>
+          <button id="four" class="column is-5 city-submit"></button>
 
-          <button id="five" class="column is-half">button</button>
+          <button id="five" class="column is-5 city-submit"></button>
 
-          <button id="six" class="column is-half">button</button>
+          <button id="six" class="column is-5 city-submit"></button>
 
-          <button id="seven" class="column is-half">button</button>
+          <button id="seven" class="column is-5 city-submit"></button>
 
-          <button id="eight" class="column is-half">button</button>
+          <button id="eight" class="column is-5 city-submit"></button>
 
-          <button id="nine" class="column is-half">button</button>
+          <button id="nine" class="column is-5 city-submit"></button>
 
-          <button id="ten" class="column is-half">button</button>
+          <button id="ten" class="column is-5 city-submit"></button>
 
       </div>
     </div>
@@ -72,128 +71,127 @@
   </section>
 
   <!-- API features sections to unload content into the webpage -->
-  <section class="features column">
+  <section class="flex-direction-row column">
     <!-- Country info links and images -->
-    <aside class="features spacing tourism column is-full city-buttons">
+    <aside class="flex-direction-row column is-full city-buttons">
 
       <div class="column is-one-fifth">
-        <h1 id="city-one-name"></h1>
-        <h1 id="city-one-image-title"></h1>
-        <img class="city-one-image"/>
+        <h1 class="text-styles-primary" id="city-one-name"></h1>
+        <h1 class="text-styles-secondary" id="city-one-image-title"></h1>
+        <img class="city-one-image shadows-primary"/>
       </div>
 
       <div class="column is-one-fifth">
-        <h1 id="city-two-name"></h1>
-        <h1 id="city-two-image-title"></h1>
-        <img class="city-two-image"/>
+        <h1 class="text-styles-primary" id="city-two-name"></h1>
+        <h1 class="text-styles-secondary" id="city-two-image-title"></h1>
+        <img class="city-two-image shadows-primary"/>
       </div>
 
       <div class="column is-one-fifth">
-        <h1 id="city-three-name"></h1>
-        <h1 id="city-three-image-title"></h1>
-        <img class="city-three-image"/>
+        <h1 class="text-styles-primary" id="city-three-name"></h1>
+        <h1 class="text-styles-secondary" id="city-three-image-title"></h1>
+        <img class="city-three-image shadows-primary"/>
       </div>
 
       <div class="column is-one-fifth">
-        <h1 id="city-four-name"></h1>
-        <h1 id="city-four-image-title"></h1>
-        <img class="city-four-image"/>
+        <h1 class="text-styles-primary" id="city-four-name"></h1>
+        <h1 class="text-styles-secondary" id="city-four-image-title"></h1>
+        <img class="city-four-image shadows-primary"/>
       </div>
 
       <div class="column is-one-fifth">
-        <h1 id="city-five-name"></h1>
-        <h1 id="city-five-image-title"></h1>
-        <img class="city-five-image"/>
+        <h1 class="text-styles-primary" id="city-five-name"></h1>
+        <h1 class="text-styles-secondary" id="city-five-image-title"></h1>
+        <img class="city-five-image shadows-primary"/>
       </div>
 
       <div class="column is-one-fifth">
-        <h1 id="city-six-name"></h1>
-        <h1 id="city-six-image-title"></h1>
-        <img class="city-six-image"/>
+        <h1 class="text-styles-primary" id="city-six-name"></h1>
+        <h1 class="text-styles-secondary" id="city-six-image-title"></h1>
+        <img class="city-six-image shadows-primary"/>
       </div>
 
       <div class="column is-one-fifth">
-        <h1 id="city-seven-name"></h1>
-        <h1 id="city-seven-image-title"></h1>
-        <img class="city-seven-image"/>
+        <h1 class="text-styles-primary" id="city-seven-name"></h1>
+        <h1 class="text-styles-secondary" id="city-seven-image-title"></h1>
+        <img class="city-seven-image shadows-primary"/>
       </div>
 
       <div class="column is-one-fifth">
-        <h1 id="city-eight-name"></h1>
-        <h1 id="city-eight-image-title"></h1>
-        <img class="city-eight-image"/>
+        <h1 class="text-styles-primary" id="city-eight-name"></h1>
+        <h1 class="text-styles-secondary" id="city-eight-image-title"></h1>
+        <img class="city-eight-image shadows-primary"/>
       </div>
 
       <div class="column is-one-fifth">
-        <h1 id="city-nine-name"></h1>
-        <h1 id="city-nine-image-title"></h1>
-        <img class="city-nine-image"/>
+        <h1 class="text-styles-primary" id="city-nine-name"></h1>
+        <h1 class="text-styles-secondary" id="city-nine-image-title"></h1>
+        <img class="city-nine-image shadows-primary"/>
       </div>
 
       <div class="column is-one-fifth">
-        <h1 id="city-ten-name"></h1>
-        <h1 id="city-ten-image-title"></h1>
-        <img class="city-ten-image"/>
+        <h1 class="text-styles-primary" id="city-ten-name"></h1>
+        <h1 class="text-styles-secondary" id="city-ten-image-title"></h1>
+        <img class="city-ten-image shadows-primary"/>
       </div>
 
     </aside>
 
 <!-- City points of interest -->
-    <aside class="body features spacing tourism column is-full">
+    <aside class="border-boxes flex-direction-row column is-full">
       <div class="column is-one-fifth">
-        <h1 id="first-poi-caption"></h1>
-        <img class="first-poi-image"/>
+        <h1 class="text-styles-secondary" id="first-poi-caption"></h1>
+        <img class="first-poi-image shadows-primary"/>
       </div>
 
       <div class="column is-one-fifth">
-        <h1 id="second-poi-caption"></h1>
-        <img class="second-poi-image"/>
+        <h1 class="text-styles-secondary" id="second-poi-caption"></h1>
+        <img class="second-poi-image shadows-primary"/>
       </div>
 
       <div class="column is-one-fifth">
-        <h1 id="third-poi-caption"></h1>
-        <img class="third-poi-image"/>
+        <h1 class="text-styles-secondary" id="third-poi-caption"></h1>
+        <img class="third-poi-image shadows-primary"/>
       </div>
 
       <div class="column is-one-fifth">
-        <h1 id="fourth-poi-caption"></h1>
-        <img class="fourth-poi-image"/>
+        <h1 class="text-styles-secondary" id="fourth-poi-caption"></h1>
+        <img class="fourth-poi-image shadows-primary"/>
       </div>
 
       <div class="column is-one-fifth">
-        <h1 id="fifth-poi-caption"></h1>
-        <img class="fifth-poi-image"/>
+        <h1 class="text-styles-secondary" id="fifth-poi-caption"></h1>
+        <img class="fifth-poi-image shadows-primary"/>
       </div>
 
       <div class="column is-one-fifth">
-        <h1 id="sixth-poi-caption"></h1>
-        <img class="sixth-poi-image"/>
+        <h1 class="text-styles-secondary" id="sixth-poi-caption"></h1>
+        <img class="sixth-poi-image shadows-primary"/>
       </div>
 
       <div class="column is-one-fifth">
-        <h1 id="seventh-poi-caption"></h1>
-        <img class="seventh-poi-image"/>
+        <h1 class="text-styles-secondary" id="seventh-poi-caption"></h1>
+        <img class="seventh-poi-image shadows-primary"/>
       </div>
 
       <div class="column is-one-fifth">
-        <h1 id="eighth-poi-caption"></h1>
-        <img class="eighth-poi-image"/>
+        <h1 class="text-styles-secondary" id="eighth-poi-caption"></h1>
+        <img class="eighth-poi-image shadows-primary"/>
       </div>
 
       <div class="column is-one-fifth">
-        <h1 id="ninth-poi-caption"></h1>
-        <img class="ninth-poi-image"/>
+        <h1 class="text-styles-secondary" id="ninth-poi-caption"></h1>
+        <img class="ninth-poi-image shadows-primary"/>
       </div>
 
       <div class="column is-one-fifth">
-        <h1 id="tenth-poi-caption"></h1>
-        <img class="tenth-poi-image"/>
+        <h1  id="tenth-poi-caption"></h1>
+        <img class="tenth-poi-image shadows-primary"/>
       </div>
     </aside>
 
-
     <!-- aiidtional tourism points of interest contect -->
-    <div class="features spacing poi column is-6">
+    <!-- <div class="features spacing poi column is-6">
               <p>
         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet dicta quia eius optio laudantium! Illo harum totam laboriosam iusto fugiat magnam molestiae voluptates cupiditate? Nisi dolorum atque rerum obcaecati nostrum!
       </p>
@@ -209,10 +207,10 @@
       <p>
         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet dicta quia eius optio laudantium! Illo harum totam laboriosam iusto fugiat magnam molestiae voluptates cupiditate? Nisi dolorum atque rerum obcaecati nostrum!
       </p>
-    </div>
+    </div> -->
 
     <!-- weather features contect and forecaster -->
-    <div class="features spacing weather column is-auto">
+    <!-- <div class="features spacing weather column is-auto">
       <p>
         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet dicta quia eius optio laudantium! Illo harum totam laboriosam iusto fugiat magnam molestiae voluptates cupiditate? Nisi dolorum atque rerum obcaecati nostrum!
       </p>
@@ -225,7 +223,7 @@
       <p>
         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet dicta quia eius optio laudantium! Illo harum totam laboriosam iusto fugiat magnam molestiae voluptates cupiditate? Nisi dolorum atque rerum obcaecati nostrum!
       </p>
-    </div>
+    </div> -->
   </section>
 
   <script src="./assets/js/navigation.js"></script>
